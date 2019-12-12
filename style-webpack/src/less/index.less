@@ -4,5 +4,29 @@ body {
     height: 100px;
     transform: translate(100, 100);
   }
+  position: relative;
+  .lantern-1 {
+    position: absolute;
+    top: 364px;
+    /* 动画名称 */
+    animation-name: lantern-upward, lantern-rotate;
+    /* 持续时间 */
+    animation-duration: 1.5s, 3s;
+    /* 动画过度类型 */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes lantern-upward
+  {
+    from {}
+    to {top: -316px;}
+  }
+  @keyframes lantern-rotate
+  {
+    0% {transform:rotate(0deg); }
+    25% {transform:rotate(-7deg); }
+    50% {transform:rotate(0deg); }
+    100% {transform:rotate(7deg); }
+  }
 }
 

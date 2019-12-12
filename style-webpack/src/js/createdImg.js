@@ -5,7 +5,7 @@ function CreatedImg () {
   let imgDom = new Image()
   imgDom.src = pnggg
   imgDom.classList.add(style['icon-gs'])
-
+  imgDom.classList.add(style['lantern-1'])
   dom.append(imgDom)
 }
 
